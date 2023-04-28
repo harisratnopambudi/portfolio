@@ -8,7 +8,7 @@
 
 ## Education:
 
-#### 1. [Sekolah Tinggi Teknologi Wastukancana](https://www.stt-wastukancana.ac.id/) | Bachelor of Informatics Engineering | Purwakarta `2011-2015`
+#### 1. [Sekolah Tinggi Teknologi Wastukancana](https://www.stt-wastukancana.ac.id/) | Bachelor Degree of Informatics Engineering | Purwakarta `2011-2015`
    - GPA 3.24 /  4.00
    
 ## Work Experience:
