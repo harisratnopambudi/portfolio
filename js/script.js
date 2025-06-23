@@ -296,4 +296,25 @@ style.textContent = `
     }
 `;
 
-document.head.appendChild(style); 
+document.head.appendChild(style);
+
+// Autoplay background music
+window.addEventListener('DOMContentLoaded', function() {
+    const bgMusic = document.getElementById('bg-music');
+    if (bgMusic) {
+        // Try to play immediately
+        const playPromise = bgMusic.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(() => {
+                // If autoplay is blocked, play on first user interaction
+                const resumeAudio = () => {
+                    bgMusic.play();
+                    document.removeEventListener('click', resumeAudio);
+                    document.removeEventListener('keydown', resumeAudio);
+                };
+                document.addEventListener('click', resumeAudio);
+                document.addEventListener('keydown', resumeAudio);
+            });
+        }
+    }
+}); 
